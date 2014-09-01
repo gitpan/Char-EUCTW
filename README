@@ -1,0 +1,55 @@
+NAME
+
+  EUCTW - Source code filter to escape EUC-TW script
+
+SYNOPSIS
+
+  use EUCTW; # usage for application programmers
+
+DESCRIPTION
+
+  The EUCTW software provides character oriented Perl scripting
+  environment in EUC-TW by easy installation and easy usage.
+
+  - Character oriented regular expression
+  - Character oriented run-time routines
+  - Character oriented subroutines
+      and
+  - Byte oriented CORE::* functions
+  - Byte oriented regular expression on /b modifier
+
+  Information processing model beginning with Perl3 or this software.
+
+    +--------------------------------------------+
+    |       Text strings as Binary strings       |
+    |       Binary strings as Text strings       |
+    +--------------------------------------------+
+    |        Not UTF8 Flagged, UNIX/C-ism        |
+    +--------------------------------------------+
+
+  Script could be written in native encoding of operating systems.
+  - Like contents of a file
+  - Like a file name on the file systems
+  - Like command lines
+  - Like environment variables
+  - Like parameters of API
+
+  In UNIX Everything is a File
+  - In UNIX everything is a stream of bytes
+  - In UNIX the filesystem is used as a universal name space
+
+INSTALLATION
+
+  Just copy EUCTW.pm and Eeuctw.pm to your @INC directory.
+  For example, to C:\Perl\site\lib
+
+SUBROUTINES
+
+  EUCTW::length(charstring)
+  EUCTW::substr(charstring, charpos, charlen)
+  and more...
+
+SEE ALSO
+
+  http://search.cpan.org/~ina/
+
